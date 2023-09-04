@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
+
+body {
+  font-family: 'Exo 2', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #d9d9d9;
+  background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%); */
+  background-color: #e1dada;
+/* background-image: linear-gradient(315deg, #bdcad9 0%, #e1dada 74%); */
+}
+
+/* Style for the custom modal container */
+.custom-modal .modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0; /* Reset min-height to allow content to adjust */
+  margin: 0; /* Remove extra margin */
+  border: 5px solid #bdcad9;
+  
+}
+
+/* Optional: To limit the width of the modal */
+.custom-modal .modal-content {
+  background-color: #bdcad9;
+  background-image: linear-gradient(315deg, #bdcad9 0%, #e1dada 74%);
+  max-width: none;
+  
+}
+
+/* Optional: To adjust modal body padding */
+.custom-modal .modal-body {
+  padding: 20px; /* Adjust as needed */
+
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+.rating span {
+  margin: 0.1rem;
+}
+
+.rating svg {
+  color: goldenrod;
+}
+
+.rating-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-left: 0.5rem;
+  color:#303D4A;
+}
+
+.product-title {
+  height: 2.5em; /* Set a fixed height */
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis; /* Add ellipsis for long text */
+  white-space: nowrap; /* Prevent wrapping */
+  color: whitesmoke;
+}
+
+#product-card{
+  border: 1px groove #000000;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);  
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+}
+
+.price{
+  color:whitesmoke;
+}
+
+.home-title{
+  color: #2B3D4F;
+  font-weight: bold;
+}
+
+table td,
+table th {
+  text-align: center;
+}
+
+.review {
+  margin-top: 30px;
+}
+
+.review h2 {
+  font-size: 24px;
+  background: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.review button {
+  margin-top: 10px;
+}
+
+.carousel-caption {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.navbar{
+background-color: #000000;
+background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+}
+
+.footer{
+  color: #000000;
+}
+
+.product-details{
+  color: #303D4A;
+}
+
+.thank-you-message{
+  color: #303D4A;
+}
+
+.cart-user{
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  main{
+    width: 100%;
+    height: 100%;
+  }
+  .cart-screen-container{
+    height:100%;
+  }
+  .cart-user{
+    display: inline-block;
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main{
+    width: 100%;
+    height: 100%;
+  }
+  .cart-screen-container{
+    height:100vh;
+  }
+  .cart-user{
+    display: inline-block;
+    text-align: right;
+  }
+}
